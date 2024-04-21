@@ -1,0 +1,114 @@
+.articleDetailsContainer {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: transparent !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.articleContentSection {
+  flex: 3;
+  padding: 20px;
+  background-color: transparent !important;
+  border-radius: 5px;
+  margin: 10px;
+  overflow-y: auto;
+  max-height: 800px;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: transparent !important; 
+  border-radius: 5px;
+  margin: 10px;
+  height: 800px;
+  overflow-y: auto;
+  border: solid black 1px !important;
+}
+
+.article-title {
+  font-size: 1.8rem; 
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.article-content {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: black;
+  text-align: justify; 
+  background-color: transparent !important; 
+  padding: 15px;
+  border-radius: 5px; 
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  font-size: 2 rem;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.followButton {
+  background-color: #4285F4;
+  color: white;
+  text-transform: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.sidebar-title {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: transparent !important;
+}
+
+.article-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important; /* Subtle borders to indicate separation */
+  color: black !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
+  background: transparent !important;
+}
+
+.article-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important; /* Light hover effect to indicate interactivity */
+}
+
+.showMoreButton {
+  background-color: #4285F4 !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  text-align: center !important;
+  width: 100% !important;
+  border-radius: 4px !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  margin-top: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .articleDetailsContainer {
+      flex-direction: column;
+  }
+
+  .sidebarSection {
+      order: -1; /* Sidebar comes first on small screens */
+      background: transparent !important;
+  }
+
+  .articleContentSection, .sidebarSection {
+      max-height: none;
+  }
+}

@@ -1,0 +1,24 @@
+/* SignIn.css */
+.signInContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff); /* A professional blue gradient */
+}
+
+.signInBox {
+  display: flex;
+  flexDirection: column;
+  alignItems: center;
+  justifyContent: center;
+}
+
+.googleIcon {
+  vertical-align: middle;
+}
+
+.signInButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+}

@@ -1,0 +1,22 @@
+.comments-container {
+    margin-top: 20px;
+}
+
+.comment-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.show-more-button {
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.comment-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}

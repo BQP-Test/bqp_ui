@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Global styles */
+body {
+    background: linear-gradient(to bottom right, #ff5252, #ff4081); /* Gradient background */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+  }
+  
+  /* Page container styles */
+  .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px; /* Add border radius */
+    margin-top: 20px; /* Add some top margin */
+    padding: 20px; /* Add padding for content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  }
+  
+  /* SignIn page styles */
+  .signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .signin-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* ArticleDetails page styles */
+  .articledetails-container {
+    margin-top: 20px;
+  }
+  
+  .articledetails-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* ArticleList page styles */
+  .articlelist-container {
+    margin-top: 20px;
+  }
+  
+  .articlelist-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .articlelist-item {
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    border-radius: 5px; /* Add border radius */
+    padding: 20px; /* Add padding */
+    margin-bottom: 10px; /* Add bottom margin */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  }
+  
+  .articlelist-item:hover {
+    background-color: rgba(240, 240, 240, 0.95); /* Change background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  

@@ -1,0 +1,62 @@
+.articleListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Center the cards for better spacing */
+  }
+  
+  .card, .createCard {
+    width: 300px;
+    min-height: 150px;
+    background: transparent !important; /* Ensuring background is transparent */
+    border: 2px solid black !important; /* Visible white borders */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .cardContent, .createCardContent {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    color: white !important; /* Ensuring text is white */
+  }
+  
+  .title, .createTitle {
+    font-size: 18px;
+    font-weight: bold; /* Optional, for better visibility */
+    width: 100%; /* Ensures the title spans the full width of the card */
+    white-space: nowrap; /* Keeps the text on a single line */
+    overflow: hidden; /* Hides text that overflows */
+    text-overflow: ellipsis; /* Adds ellipsis to truncated text */
+    margin-bottom: 10px; /* Space between title and content */
+    color: black !important; /* White text color */
+  }
+  
+  .content, .createContent {
+    font-size: 14px;
+    overflow: hidden; /* Hides text that overflows */
+    text-overflow: ellipsis; /* Adds ellipsis to truncated text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+    -webkit-box-orient: vertical;
+    height: 80px; /* Ensures uniform height */
+    margin-bottom: 20px; /* Space below the content before the button */
+    color: black !important; /* White text color */
+  }
+  
+  .linkButton, .createLinkButton {
+    text-decoration: none;
+  }
+  
+  .button, .createButton {
+    margin-top: 10px;
+    background-color: #4285F4; /* Google blue for visibility */
+    color: white !important;
+  }
+  
