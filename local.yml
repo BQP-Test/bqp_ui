@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  bqp-ui-service:
+    build:
+      context: .  # Points to the directory containing the Dockerfile and source code
+      dockerfile: ./compose/local/Dockerfile # Ensure the Dockerfile is named 'Dockerfile'
+    container_name: bqp-ui-service
+    ports:
+      - "80:80"  # Expose Nginx on port 80
+    networks:
+      - bqp_network
+
+networks:
+  bqp_network:
+    external: true
